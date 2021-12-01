@@ -69,22 +69,44 @@ text-align: left;
 margin-left: 10px;
 width: 100%;
 }
+.TT3{
+    
+    width: 100%;
+    }
+.TT2{
+    text-align: left;
+    margin-left: 30px;
+    width: 100%;
+    }
 .TT1{
     text-align: left;
     margin-right: 20%;
     width: 100%;
     }
+.contt{
+    display: flex;
+}
 .textoI{
     width: 250px;
-    margin-top: 25px;
-    margin-left: 30%;
+    margin-top: 5px;
+   margin-left: 30px;
     align-items: center;
+    margin-bottom: 30px;
     justify-content: left;
+  
+    
+}
+.textoI1{
+    display: flex;
+    margin-top: 25px;
+   
+    align-items: center;
+
   
     
 }
 
 .form-contro{
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
 }

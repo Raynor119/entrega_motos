@@ -7,7 +7,16 @@ h3{
 .containe{
    background: #34cec6;
 }
-
+.conn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
+}
+.bnn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .centrar{
     display: flex;
     background: #34cec6;
@@ -17,7 +26,15 @@ h3{
 }
 .centrar1{
     display: flex;
-    
+    width: 800px;
+    justify-content: center;
+   
+    align-items: center;
+}
+.centrar2{
+    display: flex;
+    margin-top: 20px;
+   
     justify-content: center;
    
     align-items: center;
@@ -69,22 +86,74 @@ text-align: left;
 margin-left: 10px;
 width: 100%;
 }
+.TT3{
+    
+    width: 100%;
+    }
+.TT2{
+    text-align: left;
+    margin-left: 30px;
+    width: 100%;
+    }
 .TT1{
     text-align: left;
     margin-right: 20%;
     width: 100%;
     }
+.contt{
+    margin-top: 20px;
+    display: flex;
+}
 .textoI{
     width: 250px;
-    margin-top: 25px;
-    margin-left: 30%;
+    margin-top: 5px;
+   margin-left: 30px;
     align-items: center;
+    margin-bottom: 30px;
     justify-content: left;
+  
+    
+}
+.textoI1{
+    display: flex;
+    margin-top: 25px;
+   
+    align-items: center;
+
   
     
 }
 
 .form-contro{
-    padding-top: 40px;
+    padding-top: 20px;
+    height: 400px;
+    
     padding-bottom: 40px;
+}
+
+.table{
+    border-collapse: collapse; 
+    
+    font-size: 0.9em; 
+    font-family: sans-serif; 
+    min-width: 550px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table thead tr { 
+    background-color: #5e5e63;
+     color: #ffffff; 
+     
+     text-align: left; 
+}
+.table th, .table td { 
+    padding: 12px 15px; 
+}
+.table tbody tr { 
+    border-bottom: 1px solid #dddddd; 
+} 
+.table tbody tr:nth-of-type(even) { 
+    background-color: #f3f3f3; 
+} 
+.table tbody tr:last-of-type { 
+    border-bottom: 2px solid #5e5e63; 
 }
