@@ -83,6 +83,15 @@ width: 100%;
   
     
 }
+.textoI1{
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 40%;
+    align-items: center;
+    justify-content: left;
+  
+    
+}
 
 .form-contro{
     padding-top: 40px;

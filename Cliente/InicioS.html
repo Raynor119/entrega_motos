@@ -57,7 +57,7 @@
 
 <div class="centrar">
         <div class="centrar1 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <form action="" class="form-control form-contro" >
+            <div class="" >
             <h3 class="text-center">Iniciar sesion</h3>
 
             <div class="textoI">
@@ -66,9 +66,11 @@
             <label class="TT">Contraseña</label>
             <input type="password" class="form-control" name="Contrasena1" id="Contrasena1"><br>
             </div>
-            <p><a  class="TT1" href="Registro.html" id="">Registrarse</a></p>
-            <button type="submit" class="text-center btn btn-success" onclick="">Iniciar sesion</button>
-            </form>
+            
+              <p><a  class="TT1" href="/Cliente/gestion-usuarios/Registro.html" id="">Registrars</a></p>
+              <a class="text-center btn btn-success" onclick="inicioS()">Iniciar sesion</a>
+          
+            </div>
         </div>
 
       </div>
@@ -87,17 +89,12 @@
 
 
         
-    
-<footer>
 
-</footer>
    
 
-   <!-- <script>
-        function generocookie(){
-        const nombre =  document.getElementById("nombre_usuario")
-        document.cookie="username=nombre";
-    }
-    </script> -->
+  
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
