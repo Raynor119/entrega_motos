@@ -27,6 +27,10 @@ function inicioS(){
 
 
 }
+function Cerrar(){
+    alert("Se Cerrara la Sesion");
+    window.location.href="http://127.0.0.1:9200/Servidor/cerrarC.php";
+}
 
 function Registrar(){
     let nom=document.getElementById("nombre1");
@@ -52,7 +56,7 @@ function Registrar(){
         success: res => {
             if(res != 0){
                 alert("Cuenta registrada Correcta mente");
-                window.location.href="http://127.0.0.1:9200/Cliente/gestion-usuarios/InicioS.html";
+                window.location.href="http://127.0.0.1:9200/Servidor/sesion.php";
 
 
             }else{
