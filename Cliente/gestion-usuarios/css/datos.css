@@ -9,6 +9,7 @@ h3{
 }
 .conn{
     display: flex;
+    margin-left: 10%;
     justify-content: center;
     margin-top: 15px;
     align-items: center;
@@ -92,6 +93,7 @@ width: 100%;
     width: 100%;
     }
 .contt{
+    margin-left: 8%;
     display: flex;
 }
 .textoI{

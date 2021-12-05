@@ -15,6 +15,7 @@ h3{
 }
 .bnn{
     margin-top: 20px;
+    margin-left: 40%;
     margin-bottom: 20px;
 }
 .centrar{
@@ -94,6 +95,7 @@ width: 100%;
     }
 .contt{
     margin-top: 20px;
+    margin-left: 5%;
     display: flex;
 }
 .textoI{
