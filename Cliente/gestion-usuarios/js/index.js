@@ -31,6 +31,10 @@ function Cerrar(){
     alert("Se Cerrara la Sesion");
     window.location.href="http://127.0.0.1:9200/Servidor/cerrarC.php";
 }
+function EliminarC(){
+    alert("Se Elimino la Cuenta");
+    window.location.href="http://127.0.0.1:9200/Servidor/Eliminar.php";
+}
 
 function Registrar(){
     let nom=document.getElementById("nombre1");

@@ -17,6 +17,7 @@
  while($row = mysqli_fetch_array($consulta)){
      session_start();
      $_SESSION['usuario']=$usu;
+     $_SESSION['cedula']=$row['CEDULA'];
      $_SESSION['tipo']="admin";
      echo 1;
  }
@@ -27,6 +28,7 @@
  while($row = mysqli_fetch_array($consulta)){
 		session_start();
     $_SESSION['usuario']=$usu;
+    $_SESSION['cedula']=$row['CEDULA'];
     $_SESSION['tipo']="usu";
      echo 2;
  }
