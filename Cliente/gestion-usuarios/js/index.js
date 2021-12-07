@@ -4,6 +4,10 @@ function inicioS(){
     let usua=document.getElementById("nombre_usuario1");
     let contr=document.getElementById("Contrasena1");
     let data=new FormData()
+    if(usua.value=="" || contr.value==""){
+        alert("Ingrese Usuario y Contraseña");
+
+    }else{
     data.append("usu", usua.value)
     data.append("contra", contr.value)
     $.ajax({
@@ -24,7 +28,7 @@ function inicioS(){
             }
         }
     })
-
+    }
 
 }
 function moddatos(){
@@ -100,6 +104,11 @@ function Registrar(){
     let apelli=document.getElementById("apellido1");
     let emai=document.getElementById("email1");
     let contra=document.getElementById("contrasena1");
+
+    if(nom.value=="" || cedu.value=="" || tele.value=="" || apelli=="" || emai.value=="" || contra.value==""){
+        alert("Digite todos los Campos");
+    }else{
+
     let data=new FormData()
     data.append("nomb",nom.value)
     data.append("cedu",cedu.value)
@@ -126,6 +135,6 @@ function Registrar(){
         }
 
     })
-
+    }
 
 }
