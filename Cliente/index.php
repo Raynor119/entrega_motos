@@ -28,11 +28,9 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                  
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="Gestion_repuestos/repuestos_cliente.php">Repuestos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Gestion_taller/taller.php">Taller</a>
+                    <a class="nav-link" href="../Cliente/taller.php">Taller</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="Compras/index.php">Compras</a>

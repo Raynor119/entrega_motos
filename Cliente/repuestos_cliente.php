@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/repuestos_administrador.css">
+  <link rel="stylesheet" href="../Cliente/css/repuestos_administrador.css">
 
   <title>Repuestos</title>
 
@@ -32,27 +32,24 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.php">Home</a>
+              <a class="nav-link" aria-current="page" href="../Cliente/index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Gestion_taller/taller.php">Taller</a>
+              <a class="nav-link" href="../Cliente/taller.php">Taller</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Gestion_compras/compras.php">Compras</a>
+              <a class="nav-link" href="../Cliente/Compras/index.php">Compras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../contacto.html">Contacto</a>
+              <a class="nav-link" href="../Cliente/contacto.html">Contacto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../Gestion_contabilidad/contabilidad.php">Contabilidad</a>
-            </li>
+          
           </ul>
 
         </div>
-        <a class="btn btn-light fas fa-user" href="../Gestion_usuarios/InicioS.html"></a>
-        <a class="btn btn-light fas fa-shopping-cart"></a>
-        <input type="button" value="modo dark" id="botonsito" class="btn btn-dark" onclick="mododark() ">
-      </div>
+        <a class="btn btn-light fas fa-user" href="/Servidor/sesion.php"></a>
+       
+         </div>
 
     </nav>
     <div class="containe">
@@ -110,7 +107,7 @@
 
           <?php //CONSULTA DE TODOS
 
-          include '../../Servidor/conexion.php';
+          include '../Servidor/conexion.php';
           $i = 1;
 
           //if($_REQUEST['marca'] == 'todos'){
@@ -175,7 +172,7 @@
 
 
 </body>
-<script src="../js/mododarks.js"></script>
+<script src="../Cliente/js/mododarks.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 

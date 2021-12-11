@@ -21,6 +21,7 @@ footer{
 .izquierdo{
     background: #34cec6;
     border-radius: 10px;
+    max-height: 535px;
 }
 .container{
     text-align: center;
@@ -36,7 +37,12 @@ footer{
     width: 9.969325153374234vw;
 }
 .derecho{
-    background: #34cec6;
+    background: white;
+
+    border-color: black;
+    border-style: groove;
+    border-radius: 10px;
+   
     
    /* text-align: left; */
 
@@ -48,4 +54,12 @@ footer{
 }
 .derechito{
     padding: 0px;
+}
+.cajita_div{
+    width: 314px;
+    padding: 1px;
+    border-radius: 5px;
+    border-color: #34cec6;
+    border-style: inset;
+  
 }

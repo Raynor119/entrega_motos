@@ -59,18 +59,15 @@ $resultado_producto = $objProducto->get();
               <li class="nav-item">
                 <a class="nav-link" href="taller.html">Taller</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="repuestos.html">Repuestos</a>
-              </li>
+             
               <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
             </ul>
 
           </div>
-          <a class="btn btn-light fas fa-user" href="login.html"></a>
-          <a class="btn btn-light fas fa-shopping-cart"></a>
-          <a class="btn btn-light"> DARK</a>
+		  <a class="btn btn-light fas fa-user" href="/Servidor/sesion.php"></a>
+          
         </div>
 
       </nav>

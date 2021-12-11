@@ -7,34 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="../css/taller_motos.css">
-    <link rel="icon" href="imgs/motocross.ico">
+    <link rel="stylesheet" href="../Cliente/css/taller_motos.css">
+    <link rel="icon" href="../Cliente/imgs/motocross.ico">
     <title>Home</title>
 </head>
 <body>
     <header class="">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand " href="taller.html">Taller</a>
+              <a class="navbar-brand " href="../Cliente/taller.php">Taller</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                 
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../Gestion_repuestos/repuestos_cliente.php">Repuestos</a>
+                    <a class="nav-link" href="../Cliente/index.php">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../index.php">Home</a>
+                    <a class="nav-link" href="../Cliente/Compras/index.php">Compras</a>
                   </li>
+                  
                   <li class="nav-item">
-                    <a class="nav-link" href="../Gestion_compras/compras.php">Compras</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Gestion_contabilidad/contabilidad.php">Contabilidad</a>
-                </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../contacto.html">Contacto</a>
+                    <a class="nav-link" href="../Cliente/contacto.html">Contacto</a>
                   </li>
                   
                 </ul>
@@ -73,7 +69,7 @@
 
         <div class="caja_media col-lg-4 col-md-4 col-sm-4 col-xs-4">
           <h5>Proyecto de moto</h5>
-          <img src="../imgs/695925.jpg" alt="" style="width: 400px; height:200px;" class="media">
+          <img src="../Cliente/imgs/695925.jpg" alt="" style="width: 400px; height:200px;" class="media">
           <br> <br> 
           <h5>Informacion del taller</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sint nam ipsa quibusdam distinctio! Libero commodi quisquam odit sint illum corrupti necessitatibus velit consequuntur nulla eveniet tempora, praesentium quidem magni.</p>

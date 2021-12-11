@@ -21,7 +21,7 @@ if($resultado>0){
 //echo 'alert("REGISTRO AGEGADO")';  
 //echo '</script>';  
 
-header("Location:../Cliente/Gestion_repuestos/repuestos_administrador.php");
+header("Location:../Cliente/repuestos_administrador.php");
 
 //exit();
 

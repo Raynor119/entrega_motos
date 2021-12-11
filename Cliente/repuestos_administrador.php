@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/repuestos_administrador.css">
+  <link rel="stylesheet" href="../Cliente/css/repuestos_administrador.css">
 
   <title>Repuestos</title>
   <script>
@@ -30,26 +30,24 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.php">Home</a>
+              <a class="nav-link" aria-current="page" href="../Cliente/index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Gestion_taller/taller.php">Taller</a>
+              <a class="nav-link" href="../Cliente/taller.php">Taller</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Gestion_compras/compras.php">Compras</a>
+              <a class="nav-link" href="../Cliente/Compras/index.php">Compras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../contacto.html">Contacto</a>
+              <a class="nav-link" href="../Cliente/contacto.html">Contacto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../Gestion_contabilidad/contabilidad.php">Contabilidad</a>
-            </li>
+           
           </ul>
 
         </div>
-        <a class="btn btn-light fas fa-user" href="login.html"></a>
-        <a class="btn btn-light fas fa-shopping-cart"></a>
-        <a class="btn btn-light" href="repuestos_administrador_general"> TABLA</a>
+        <a class="btn btn-light fas fa-user" href="/Servidor/sesion.php"></a>
+       
+     
       </div>
 
     </nav>
@@ -273,7 +271,7 @@
           
                   
             <?php 
-                      include '../../Servidor/conexion.php';
+                      include '../Servidor/conexion.php';
                       $i=1;
                    
                     $consulta="SELECT * from repuestos";
@@ -288,7 +286,7 @@
                           <div class="cajita_div">   
                           <img src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']);?>"style="width: 180px;" > <br>
                           <?php echo $descripcion; ?> <br>
-                          <a href="../Gestion_compras/compras.php" class="fas fa-eye btn btn-light" ></a>
+                          <a href="../Cliente/Compras/compras.php" class="fas fa-eye btn btn-light" ></a>
                           </div>
                         
                         <?php 

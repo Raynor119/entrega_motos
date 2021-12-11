@@ -13,14 +13,17 @@ h3{
 footer{
     border-radius: 20px;
     background: grey;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
    
 }
 .izquierdo{
     background: #34cec6;
     border-radius: 10px;
+    max-height: 535px;
+}
+.izquierdo2{
+    background: white;
+    border-radius: 10px;
+    max-height: 535px;
 }
 .container{
     text-align: center;
@@ -36,7 +39,12 @@ footer{
     width: 9.969325153374234vw;
 }
 .derecho{
-    background: #34cec6;
+    background: white;
+
+    border-color: black;
+    border-style: groove;
+    border-radius: 10px;
+   
     
    /* text-align: left; */
 
@@ -48,4 +56,29 @@ footer{
 }
 .derechito{
     padding: 0px;
+}
+.cajita_div{
+    width: 282px;
+    padding: 1px;
+    border-radius: 5px;
+    border-color: #34cec6;
+    border-style: inset;
+  
+}
+.inputs{
+    width: 85px;
+}
+.form-control{
+    text-align: center;
+}
+.habitual{
+    background: #34cec6;
+}
+#put{
+    width: 90px;
+    text-align: center;
+}
+.mododark{
+    background: black;
+    color: white;
 }
