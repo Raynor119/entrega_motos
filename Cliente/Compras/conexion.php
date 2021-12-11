@@ -5,10 +5,10 @@
 //Derechos de autor(Suscribete)
 
 $manejador="mysql";
-$servidor="localhost:3307";
-$usuario="root";
-$pass="root";
-$base="dbcarrito";
+$servidor="localhost:3306";
+$usuario="admin";
+$pass="admin";
+$base="motos";
 $cadena="$manejador:host=$servidor;dbname=$base";
 $cnx = new PDO($cadena,$usuario,$pass);
 ?>

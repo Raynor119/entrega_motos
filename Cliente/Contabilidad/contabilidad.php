@@ -1,6 +1,6 @@
 <?php 
 
-	$conexion=mysqli_connect('localhost:3307','root','root','contabilidad');
+	$conexion=mysqli_connect('localhost:3306','admin','admin','motos');
 
  ?>
 
@@ -50,26 +50,20 @@
                             <a class="nav-link" aria-current="page" href="repuestos.html">Repuestos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="/Cliente/index.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="taller.html">Taller</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="compras.php">Compras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contabilidad.php">Contabilidad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
+                        
+                       
+                       
                     </ul>
 
                 </div>
-                <a class="btn btn-light fas fa-user" href="login.html"></a>
+                <a class="btn btn-light fas fa-user" href="/Servidor/sesion.php"></a>
                 <a class="btn btn-light fas fa-shopping-cart"></a>
-                <a class="btn btn-light"> DARK</a>
+               
             </div>
 
         </nav>

@@ -35,11 +35,9 @@
                     <a class="nav-link" href="Gestion_taller/taller.php">Taller</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Gestion_compras/compras.php">Compras</a>
+                    <a class="nav-link" href="Compras/index.php">Compras</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Gestion_contabilidad/contabilidad.php">Contabilidad</a>
-                  </li>
+                 
                   <li class="nav-item">
                     <a class="nav-link" href="contacto.html">Contacto</a>
                   </li>
@@ -48,7 +46,7 @@
               </div>
               <a class="btn btn-light fas fa-user" href="/Servidor/sesion.php"></a>
               <a class="btn btn-light fas fa-shopping-cart"></a>
-              <a class="btn btn-light"> DARK</a>
+              
             </div>
           
           </nav>
