@@ -57,11 +57,11 @@ $resultado_producto = $objProducto->get();
                 <a class="nav-link" aria-current="page" href="/Cliente/index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="taller.html">Taller</a>
+                <a class="nav-link" href="../taller.php">Taller</a>
               </li>
              
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link" href="../contacto.html">Contacto</a>
               </li>
             </ul>
 

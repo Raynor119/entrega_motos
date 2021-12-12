@@ -1,6 +1,6 @@
 <?php 
 
-	$conexion=mysqli_connect('localhost:3307','root','root','contabilidad');
+	$conexion=mysqli_connect('localhost:3306','admin','admin','motos');
 
  ?>
 
@@ -46,30 +46,26 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                      
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="repuestos.html">Repuestos</a>
+                            <a class="nav-link" href="../index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="../taller.php">Taller</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="taller.html">Taller</a>
+                            <a class="nav-link" href="../Compras/index.php">Compras</a>
                         </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="compras.php">Compras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contabilidad.php">Contabilidad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="../contacto.html">Contacto</a>
                         </li>
                     </ul>
 
                 </div>
-                <a class="btn btn-light fas fa-user" href="login.html"></a>
-                <a class="btn btn-light fas fa-shopping-cart"></a>
-                <a class="btn btn-light"> DARK</a>
+                <a class="btn btn-light fas fa-user" href="/Servidor/sesion.php"></a>
+         
+              
             </div>
 
         </nav>

@@ -16,7 +16,7 @@
   <header class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand " href="compras.php">Compras</a>
+        <a class="navbar-brand " href="index.php">Compras</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,23 +26,17 @@
               <a class="nav-link" aria-current="page" href="../index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../Gestion_taller/taller.php">Taller</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../Gestion_repuestos/repuestos_cliente.php">Repuestos</a>
+              <a class="nav-link" href="../taller.php">Taller</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../contacto.html">Contacto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../Gestion_contabilidad/contabilidad.php">Contabilidad</a>
-            </li>
+            
           </ul>
 
         </div>
-        <a class="btn btn-light fas fa-user" href="login.html"></a>
-        <a class="btn btn-light fas fa-shopping-cart"></a>
-        <a class="btn btn-light"> DARK</a>
+        <a class="btn btn-light fas fa-user" href="/Servidor/sesion.php"></a>
+       
       </div>
 
     </nav>

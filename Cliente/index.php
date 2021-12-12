@@ -43,8 +43,7 @@
               
               </div>
               <a class="btn btn-light fas fa-user" href="/Servidor/sesion.php"></a>
-              <a class="btn btn-light fas fa-shopping-cart"></a>
-              
+             
             </div>
           
           </nav>
