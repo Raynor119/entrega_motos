@@ -1,6 +1,6 @@
 <?php 
 
-	$conexion=mysqli_connect('localhost:3306','admin','admin','motos');
+	$conexion=mysqli_connect('localhost:3307','root','root','contabilidad');
 
  ?>
 
@@ -50,20 +50,26 @@
                             <a class="nav-link" aria-current="page" href="repuestos.html">Repuestos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Cliente/index.php">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="taller.html">Taller</a>
                         </li>
-                        
-                       
-                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="compras.php">Compras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contabilidad.php">Contabilidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
 
                 </div>
-                <a class="btn btn-light fas fa-user" href="/Servidor/sesion.php"></a>
+                <a class="btn btn-light fas fa-user" href="login.html"></a>
                 <a class="btn btn-light fas fa-shopping-cart"></a>
-               
+                <a class="btn btn-light"> DARK</a>
             </div>
 
         </nav>
@@ -102,29 +108,56 @@
 
                 $sentencia2 = $bd -> query("select * from empleados ORDER BY MONTH(fecha) DESC , fecha DESC;");
                 $herramientas2 = $sentencia2->fetchAll(PDO::FETCH_OBJ);
+
+                $sentencia3 = $bd -> query("select * from transacciones ORDER BY MONTH(fecha) DESC , fecha DESC;");
+                $herramientas3 = $sentencia3->fetchAll(PDO::FETCH_OBJ);
                 
                 
             ?>
 
-            <div class="container mt-2">
-                <div class="row justify-content-center">
-                    <div style="width: 1000px;" class="col-md-7">
-                    
-                        <div class="card">
-                            
-                            <div class="p-2">
-                                <div>
+                <div class="container mt-2">
+                    <div >
+                        <div class="col-md-7">
+                        
+                            <div style="width: 1000px;" class="card">
+                                <div " class="card-header">
+                                    Lista de herramientas
+                                </div>
+                                <div class="p-2">
                                     <table class="table align-middle">
                                         <thead>
                                             <tr>
-                                                <td>id</td>
-                                                <td>descipción</td>
-                                                <td>ganancia</td>
-                                                <td>fecha</td>
+                                                <th scope="col">Id</th>
+                                                <th scope="col">Descripción</th>
+                                                <th scope="col">Ganancia</th>
+                                                <th scope="col">Fecha</th>
                                                 <th scope="col" colspan="2">Opciones</th>
                                             </tr>
                                         </thead>
+                                        <tbody>
+                                            
+                                            <?php 
+                                                foreach($herramientas3 as $dato){ 
+                                            ?>
 
+                                            <tr>
+                                                <td scope="row"><?php echo $dato->id; ?></td>
+                                                <td><?php echo $dato->descipción; ?></td>
+                                                <td><?php echo $dato->ganancia; ?></td>
+                                                <td><?php echo $dato->fecha; ?></td>
+                                                <td><a class="text-success" href="editarReporte.php?id=<?php echo $dato->id; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                                                <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="eliminarReporte.php?id=<?php echo $dato->id; ?>"><i class="bi bi-trash"></i></a></td>
+                                            </tr>
+
+                                            <?php 
+                                                }
+                                            ?>
+
+                                        </tbody>
+                                    </table>
+
+                            
+                                        
                                         <?php 
                                         $sql="SELECT * from transacciones ORDER BY MONTH(fecha) DESC , fecha DESC;";               
                                         $sql2="SELECT * from transacciones WHERE MONTH(fecha)='12' ";  
@@ -134,14 +167,7 @@
                                         $qty= 0;
                                         while($mostrar=mysqli_fetch_array($result)){
                                             ?>
-                                                <tr>
-                                                    <td><?php echo $mostrar['id'] ?></td>
-                                                    <td><?php echo $mostrar['descipción'] ?></td>
-                                                    <td><?php echo $mostrar['ganancia'] ?></td>
-                                                    <td><?php echo $mostrar['fecha'] ?></td>
-                                                    <td><a class="text-success" href="editarEmpleado.php?codigo=<?php echo $dato->codigo; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                                                    <td><a onclick="return confirm('Estas seguro de eliminar?');" class="text-danger" href="eliminarEmpleado.php?codigo=<?php echo $dato->codigo; ?>"><i class="bi bi-trash"></i></a></td>
-                                                </tr>      
+                                                        
                                             <?php 
                                             $qty += $mostrar['ganancia'];                   
                                         }
@@ -154,14 +180,26 @@
                                             $qty2 += $mostrar['ganancia'];                   
                                             }
                                             ?>
-                                
-                                    </table>
+                                        
+                                        
+                                        <h4>Ganancia Total</h4>
+                                        <input name="total" value=<?php echo $qty; ?> disabled>
+                                    
+
+                                    
+                                    
                                 </div>
-                                
-                                <h4>Ganancia Total</h4>
-                                <input name="total" value=<?php echo $qty; ?> disabled>
                             </div>
                         </div>
+                        
+                    </div>
+                </div>
+
+            <div class="container mt-2">
+                <div class="row justify-content-center">
+                    <div style="width: 1000px;" class="col-md-7">
+                    
+                        
                     </div>
                     
                 </div>
