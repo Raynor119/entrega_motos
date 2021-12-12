@@ -130,7 +130,7 @@
               <div class="cajita_div">
                 <img src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']); ?>" style="width: 180px;"> <br>
                 <?php echo $descripcion; ?> <br>
-                <a href="../Gestion_compras/compras.php" class="fas fa-eye btn btn-light"></a>
+                <a href="../Cliente/Compras/compras.php" class="fas fa-eye btn btn-light"></a>
               </div>
 
           <?php

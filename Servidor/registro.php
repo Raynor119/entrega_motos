@@ -16,9 +16,15 @@ $contra=$_POST["contra"];
      }else{
   } 
   $query="INSERT INTO PERSONA(CEDULA,NOMBRE,APELLIDO,TELEFONO,EMAIL,CONTRA) VALUES(".$cedu.",'".$nomb."','".$apelli."',".$tele.",'".$emai."','".$contra."')";
-  $consulta = mysqli_query($conexion,$query);
+  $consulta = mysqli_query($conexion,$query) or die (error());
   $query2="INSERT INTO USUARIO(ID) VALUES(".$cedu.")";
-  $consulta2 = mysqli_query($conexion,$query2);
+  $consulta2 = mysqli_query($conexion,$query2) or die (error());
   echo 1;
+
+
+  function error(){
+    echo 0;
+  }
+
 
 ?>

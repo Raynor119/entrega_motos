@@ -17,7 +17,7 @@ if($conexion->connect_errno){
  $query="DELETE FROM  USUARIO WHERE ID='".$cedula."'";
  $query1="DELETE FROM  PERSONA WHERE CEDULA='".$cedula."'";
  $consulta = mysqli_query($conexion,$query);
- $consulta2 = mysqli_query($conexion,$query2);
+ $consulta2 = mysqli_query($conexion,$query1);
 
 $_SESSION['usuario']="";
 $_SESSION['cedula']="";

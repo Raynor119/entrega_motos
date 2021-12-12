@@ -130,7 +130,12 @@ function Registrar(){
 
 
             }else{
-                alert("Error al crear la cuenta");
+                if(res == 0){
+                    alert("Error la cuenta ya existe");
+                }else{
+                    alert("Error al Crear la Cuenta");
+                }
+                
             }
         }
 
